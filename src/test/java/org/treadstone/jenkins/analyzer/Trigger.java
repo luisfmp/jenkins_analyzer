@@ -47,7 +47,7 @@ public class Trigger {
     public void run() throws IOException {
         driver.get("http://wdpr-cast-platform.cloud.corp.dig.com/jenkins/view/cast-platform-apps/");
         MyIdPage myIdPage = new MyIdPage(driver);
-        myIdPage.logIn("MARTL372", "LuisFernando84");
+        myIdPage.logIn("MARTL372", "BokuNoHero84");
         for (Projects project : Projects.values()) {
             for (String testType : project.getTypesSupported()) {
                 JenkinsReportPage reportPage = PageFactory2.redirectToReportPage(driver, project,
